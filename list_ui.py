@@ -1,5 +1,5 @@
 # IMPORTS
-from list_functions import newpath, reset_path, pc_app, web_app, both
+from list_functions import newpath, reset_path, pc_app, web_app, both, resource_path
 from tkinter import Tk, Menu, Button
 
 # WINDOW
@@ -7,7 +7,8 @@ window = Tk()
 window.overrideredirect()
 window.geometry("180x120+870+480")
 window.title("Epic Games")
-window.iconbitmap("C:\\Users\\maipley\\Desktop\\prompt list\\Epic games logo.ico")
+wiconbitmap = resource_path("Epic games logo.ico")
+window.iconbitmap(wiconbitmap)
 window['bg'] = "black"
 
 # MENU BAR
