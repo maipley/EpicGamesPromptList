@@ -1,5 +1,5 @@
 # IMPORTS
-from list_functions import newpath, reset_path, pc_app, web_app, both, resource_path
+from list_functions import newpath, reset_path, pc_app, web_app, both
 from tkinter import Tk, Menu, Button
 
 # WINDOW
