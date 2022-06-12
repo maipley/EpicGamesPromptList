@@ -98,4 +98,3 @@ def both():
     webbrowser.open(epic_web)
     exit()
 
-
