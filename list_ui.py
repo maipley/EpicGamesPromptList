@@ -5,7 +5,7 @@ from tkinter import Tk, Menu, Button
 # WINDOW
 window = Tk()
 window.overrideredirect()
-window.geometry("180x150+870+480")
+window.geometry("180x140+870+480")
 window.title("Epic Games")
 wiconbitmap = resource_path("Epic games logo.ico")
 window.iconbitmap(wiconbitmap)
@@ -29,7 +29,7 @@ Button(
     bg="grey",
     cursor="hand2",
     command=pc_app
-    ).pack(pady=2)
+    ).pack(pady=1)
 
 Button(
     window,
@@ -38,7 +38,7 @@ Button(
     bg="grey",
     cursor="hand2",
     command=web_app
-    ).pack(pady=2)
+    ).pack(pady=1)
 
 Button(
     window,
@@ -48,7 +48,7 @@ Button(
     bg="grey",
     cursor="hand2",
     command=both
-    ).pack(pady=2)
+    ).pack(pady=1)
 
 # MAINLOOP
 window.mainloop()
