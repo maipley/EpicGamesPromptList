@@ -5,7 +5,7 @@ from tkinter import Tk, Menu, Button
 # WINDOW
 window = Tk()
 window.overrideredirect()
-window.geometry("180x120+870+480")
+window.geometry("180x150+870+480")
 window.title("Epic Games")
 wiconbitmap = resource_path("Epic games logo.ico")
 window.iconbitmap(wiconbitmap)
@@ -22,13 +22,33 @@ path_menu.add_command(label="Select path", command=newpath)
 path_menu.add_command(label="Reset path", command=reset_path)
 
 # BUTTONS
-button1 = Button(window, text="PC app", padx=10, pady=5, bg="grey", command=pc_app)
-button2 = Button(window, text="Web app", padx=10, pady=5, bg="grey", command=web_app)
-button3 = Button(window, text="Both", padx=10, pady=5, bg="grey", command=both)
+Button(
+    window,
+    text="PC app",
+    padx=10, pady=5,
+    bg="grey",
+    cursor="hand2",
+    command=pc_app
+    ).pack(pady=2)
 
-button1.pack()
-button2.pack()
-button3.pack()
+Button(
+    window,
+    text="Web app",
+    padx=10, pady=5,
+    bg="grey",
+    cursor="hand2",
+    command=web_app
+    ).pack(pady=2)
+
+Button(
+    window,
+    text="Both",
+    padx=10,
+    pady=5,
+    bg="grey",
+    cursor="hand2",
+    command=both
+    ).pack(pady=2)
 
 # MAINLOOP
 window.mainloop()
